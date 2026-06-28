@@ -1,0 +1,14 @@
+name: My First GitHub Action
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Python Program
+        run: python3 app.py
